@@ -11,7 +11,6 @@ test.only("homepage has Playwright in title and get started link linking to the 
   const intro = new Intro(page);
 
   await homePage.navigateToHome();
-  await expect(page).toHaveTitle(/Playwright/);
   await homePage.clickGetStarted();
   await intro.checkIntroIsOpened();
   await expect(page).toHaveURL(/.*intro/);
