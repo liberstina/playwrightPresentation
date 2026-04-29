@@ -4,7 +4,7 @@ import { Home } from "../../playwright/pageObject/Home";
 import { Intro } from "../../playwright/pageObject/Intro";
 import { Header } from "../../playwright/pageObject/Header";
 
-test.only("homepage has Playwright in title and get started link linking to the intro page", async ({
+test("homepage has Playwright in title and get started link linking to the intro page", async ({
   page,
 }) => {
   const homePage = new Home(page);
